@@ -1,0 +1,33 @@
+!SESSION 2026-08-26 00:50:13.238 -----------------------------------------------
+eclipse.buildId=Version 2.2.0
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/koffiah/STM32CubeIDE/Advanced-DSP
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-08-26 00:50:16.297
+!MESSAGE Log4j2 initialized with config file /home/koffiah/STM32CubeIDE/Advanced-DSP/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-08-26 00:50:18.506
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2026-08-26 00:52:36.252 -----------------------------------------------
+eclipse.buildId=Version 2.2.0
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-08-26 00:52:38.678
+!MESSAGE Log4j2 initialized with config file /home/koffiah/STM32CubeIDE/Advanced-DSP/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-08-26 00:52:40.651
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-08-26 00:54:22.627
+!MESSAGE Indexed '05_Testing_cmsis-dsp_float32' (5 sources, 97 headers) in 0.98 sec: 7,269 declarations; 9,351 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-08-26 01:11:40.933
+!MESSAGE Indexed '00_Testing_cmsis-dsp_float32' (5 sources, 97 headers) in 0.588 sec: 7,269 declarations; 9,351 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-08-26 01:12:08.477
+!MESSAGE Indexed '01_FreeRTOSIntegration' (8 sources, 86 headers) in 0.569 sec: 6,120 declarations; 6,671 references; 10 unresolved inclusions; 89 syntax errors; 1,768 unresolved names (12%)
