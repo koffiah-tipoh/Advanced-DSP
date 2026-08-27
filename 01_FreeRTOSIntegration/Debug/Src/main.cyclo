@@ -1,5 +1,7 @@
-../Src/main.c:21:5:main	1
-../Src/main.c:40:13:plot_input_signal	2
-../Src/main.c:49:13:serial_plot_input_sig	2
-../Src/main.c:56:13:pseudo_dly	2
-../Src/main.c:60:13:fpu_enable	1
+../Src/main.c:27:5:main	1
+../Src/main.c:59:6:Task1	1
+../Src/main.c:66:6:Task2	1
+../Src/main.c:73:13:plot_input_signal	2
+../Src/main.c:82:13:serial_plot_input_sig	2
+../Src/main.c:89:13:pseudo_dly	2
+../Src/main.c:93:13:fpu_enable	1

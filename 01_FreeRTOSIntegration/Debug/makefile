@@ -9,8 +9,16 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include chip_headers/CMSIS/DSP/Source/TransformFunctions/subdir.mk
+-include chip_headers/CMSIS/DSP/Source/SupportFunctions/subdir.mk
+-include chip_headers/CMSIS/DSP/Source/FilteringFunctions/subdir.mk
+-include chip_headers/CMSIS/DSP/Source/CommonTables/subdir.mk
+-include chip_headers/CMSIS/DSP/Source/BasicMathFunctions/subdir.mk
 -include Startup/subdir.mk
 -include Src/subdir.mk
+-include Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/subdir.mk
+-include Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/subdir.mk
+-include Middlewares/Third_Party/FreeRTOS/Source/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)

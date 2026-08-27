@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdint.h>
 
 #include "stm32f4xx.h"
 #include "signals.h"
@@ -17,6 +18,11 @@ static void serial_plot_input_sig(void);
 static void pseudo_dly(int dly);
 static void fpu_enable(void);
 
+uint32_t task1Profiler, task2Profiler;
+
+void Task1(void *pvParameter);
+void Task2(void *pvParameter);
+
 
 int main(){
 	/* Enable FPU*/
@@ -25,16 +31,43 @@ int main(){
 	/* Initialize the uart*/
 	uart3_tx_init();
 
-    while(1) {
-    	// Using the internal Logic Analyzer
-    	//plot_input_signal();
+	// Create a task1
+	xTaskCreate(Task1,
+				"Task1",	// task's name for debug purpose
+				100,		// stack
+				NULL,
+				1,			// priority
+				NULL);
+
+	// Create a task2
+	xTaskCreate(Task2,
+				"Task2",
+				100,
+				NULL,
+				1,
+				NULL);
+
+	vTaskStartScheduler();
+
+    for(;;) {
 
     	// Using the Serial Plotter (Arduino) / Python + Qt5 plotter script
     	serial_plot_input_sig();
-
-    	//printf("Hello from STM32...\n\r");
-
     }
+}
+
+void Task1(void *pvParameter) {
+	for(;;) {
+		// Do something...
+		task1Profiler++;
+	}
+}
+
+void Task2(void *pvParameter) {
+	for(;;) {
+		// Do something...
+		task2Profiler++;
+	}
 }
 
 static void plot_input_signal(void) {

@@ -81,9 +81,10 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Startup"/>
+						<entry excluding="chip_headers/CMSIS/DSP/Examples/ARM|chip_headers/CMSIS/DSP/Examples/ARM/arm_signal_converge_example/RTE/Device/ARMCM3|chip_headers/CMSIS/DSP/Examples/ARM/arm_signal_converge_example/RTE/Device/ARMCM55|chip_headers/CMSIS/DSP/Examples/ARM/arm_signal_converge_example/RTE/Device/ARMCM7_SP|chip_headers/CMSIS/DSP/Examples/ARM/arm_signal_converge_example/RTE/Device/ARMCM0|chip_headers/CMSIS/DSP/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM4_FP|chip_headers/CMSIS/DSP/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM3|chip_headers/CMSIS/DSP/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM0|chip_headers/CMSIS/DSP/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM7_SP|chip_headers/CMSIS/DSP/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM55|chip_headers/CMSIS/DSP/ComputeLibrary/Source|chip_headers/CMSIS/DSP/Examples/ARM/arm_svm_example/RTE/Device/ARMCM0|chip_headers/CMSIS/DSP/Examples/ARM/arm_svm_example/RTE/Device/ARMCM3|chip_headers/CMSIS/DSP/Examples/ARM/arm_svm_example/RTE/Device/ARMCM4_FP|chip_headers/CMSIS/DSP/Examples/ARM/arm_svm_example/RTE/Device/ARMCM7_SP|chip_headers/CMSIS/DSP/Examples/ARM/arm_svm_example/RTE/Device/ARMCM55|chip_headers/CMSIS/DSP/Examples/ARM/arm_variance_example/RTE/Device/ARMCM3|chip_headers/CMSIS/DSP/Examples/ARM/arm_variance_example/RTE/Device/ARMCM4_FP|chip_headers/CMSIS/DSP/Examples/ARM/arm_variance_example/RTE/Device/ARMCM0|chip_headers/CMSIS/DSP/Examples/ARM/arm_variance_example/RTE/Device/ARMCM55|chip_headers/CMSIS/DSP/Examples/ARM/arm_variance_example/RTE/Device/ARMCM7_SP|Inc|Src|Startup" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Inc"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Startup"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -154,9 +155,9 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Startup"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Inc"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Startup"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
