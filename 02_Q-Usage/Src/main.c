@@ -9,6 +9,10 @@
 #include "task.h"
 
 
+/* We have a signal at 10Hz smapled at 1kHz*/
+#define SIGNAL_FREQ 	50
+#define SAMPLING_FREQ 	1000
+
 extern float _5hz_signal[HZ_5_SIG_LEN];
 extern float32_t input_signal_f32_1kHz_15kHz[KHZ1_15_SIG_LEN];
 float g_in_sig_samples;
@@ -30,6 +34,9 @@ float32_t f32_sensor_data[BLOCK_SIZE];
 q31_t q31_sensor_data[BLOCK_SIZE];
 float32_t f32_dest_sensor_data[BLOCK_SIZE];
 uint32_t u32_dest_sensor_data[BLOCK_SIZE];
+
+sine_generator_q15_t signal_desc;
+q15_t sine_Sig_sample;
 
 int main(){
 	/* Enable FPU*/
@@ -62,10 +69,15 @@ int main(){
 		u32_dest_sensor_data[i] = (uint32_t) (temp_data + 0.5);
 	}
 
+	sine_gen_init_q15(signal_desc, SIGNAL_FREQ, SAMPLING_FREQ);
+
     for(;;) {
 
+    	sine_sig_sample = sine_calc_sample_q15(signal_desc);
+    	printf("%d\n\r", sine_sig_sample);
+
     	// Using the Serial Plotter (Arduino) / Python + Qt5 plotter script
-    	serial_plot_input_sig();
+    	//serial_plot_input_sig();
     }
 }
 
